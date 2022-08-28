@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body{
+            background-color:antiquewhite;
+        }
+        #f,email,c{
+            font-size: 15px;
+        }
+        #sub{
+          margin-left: 50%;
+          margin-right: 50%;
+          font-size: 25px;
+        }
+        #fe{
+          background-color: rgb(111, 179, 239);
+          height: 50px;
+        }
+    </style>
+</head>
+<body>
+  <form action="/feed.html" method="post" target="_blank">
+   <div id="fe">
+    <h1 style="text-align: center;">Feedback Form</h1>
+    </div>
+    <hr>
+    <h2> <b>How was the Website?</b></h2>
+    <h3>Please give your Valuable feedback</h3> 
+
+<label for="f" style="font-size:20px ; margin-right: 50px;">Enter name:   </label>
+<input type="text" id="f" name="fname" required >
+<br>
+<label for="email" style="font-size: 20px; margin-right: 7px;">Enter your email: </label>
+<input type="email" id="email" name="email">
+<br>
+<label for="c" style="font-size:20px ; margin-right : 50px;">Contact No:  </label>
+<input type="number" id="c" name="c" min="10" max="10" style="width:200px ;">
+<br>
+<label for="d" style="font-size:20px ; margin-right: 105px;">Date:</label>
+  <input type="date" id="d" name="Date">
+<br>
+<p style="font-size:20px ;">How was the website:</p>
+<input type="radio" id="r1" name="f" value="Good">
+  <label for="r1" style="font-size:20px ;">Good</label><br>
+  <input type="radio" id="r2" name="f" value="Average">
+  <label for="r2" style="font-size:20px ;">Average</label><br>
+  <input type="radio" id="r3" name="f" value="Bad">
+  <label for="r3" style="font-size:20px ;">Bad</label>
+  <br>
+  <span style="font-size:20px ;">Select your State:</span>
+    <input list="state">
+  <datalist id="state">
+    <option value="Rajasthan">
+    <option value="Gujarat">
+    <option value="UP">
+    <option value="Bihar">
+    <option value="Maharashtra"> 
+  </datalist> <br> 
+  <div style="font-size:20px ;">Write Your suggestion:</div>
+  <textarea name="message" rows="10" cols="30" placeholder="Write your suggestion"  style="margin-top: 20px;margin-left: 20px;">
+    </textarea> 
+    <input type="submit" value="Submit" id="sub">
+</form>
+
+</body>
+</html>
