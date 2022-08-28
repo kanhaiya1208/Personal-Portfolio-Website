@@ -5,46 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanhaiya's Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <style>
-    body{
-      background-image: url('https://c4.wallpaperflare.com/wallpaper/9/519/764/mountains-best-for-desktop-background-wallpaper-preview.jpg');
-      background-repeat: no-repeat;background-attachment: fixed;background-size:cover;
-    }
+<style>
+  .nav{
+height: 100px;
+background-color: white;
+font-size: 60px;
+padding-bottom: 50px;
+
+  }
+  .nav2{
+    height: 60px;
+background-color: rgb(4 131 179);
+
+padding-top: 10px;
+ width:100%;
+
+  }
+  body{
+    background-color: white;
+  }
+  .b1{
+    height: 50px;
+    width: 70px;
+    margin-left: 20px;
+  }
+  .mid{
+    height: 320px;
+    width: 100%;
+    background-color:white ;
+    font-size: 40px;
+  }
+  .img{
+    float: right;
+  }
+  .foot{
+    height: 200px;
+    width: 100%;
+    background-color:#333;
+    
+  }
+  .i2{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .b3{
+    height: 50px;
+    width: 350px;
+    margin-top: 40px;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 100%;
+  }
+  #s{
+    margin-left: 500px;
+    font-size: 20px;
+  }
+  .b4{
+    height: 50px;
+    width: 80px;
+    margin-left: 300px;
+    margin-bottom: 30px;
+  }
   </style>
-   <big style="color: white;">KANHAIYA </big> 
-   <div style="text-align:right ;">
-    <a href="/index.html"><input type="button" value="Home"/></a>
-    <a href="/About.html"><input type="button" value="About"/></a>
-    <a href="/Skills.html"><input type="button" value="Skills"/></a>
-    <a href="/Education.html"><input type="button" value="Education"/></a>
-    <a href="/Contact.html"><input type="button" value="Contact"/></a>
+  </head>
+<body>
+  
+ <div class="nav">
+  <img src="/Images/logo.jpg" alt="K" height="80px" style="margin-right: 370px;margin-top: 15px;" >
+ <span style="margin-bottom:30px;padding-bottom: 400px;">Kanhaiya Lal</span>
+ 
+ <button class="b4" onclick="document.location='/login.html'" style="border-radius: 30px;background-color: rgb(0, 255, 247);" >Login</button>
+ </div>
+  <div class ="nav2">
+    <button class="b1" onclick="document.location='index.html'" style="border-radius: 30px;background-color: rgb(255, 145, 0);">Home</button>
+    <button class="b1" onclick="document.location='/About.html'" style="border-radius: 30px;background-color: rgb(255, 145, 0);">About</button>
+    <button class="b1" onclick="document.location='/Skills.html'"style="border-radius: 30px;background-color: rgb(255, 145, 0);">Skills</button>
+    <button class="b1" onclick="document.location='/Education.html'"style="border-radius: 30px;background-color: rgb(255, 145, 0);">Education</button>
+    <button class="b1" onclick="document.location='contact.html'"style="border-radius: 30px;background-color: rgb(255, 145, 0);">Contact</button>
+   <label for="s"> </label>
+  <input type="search" id="s" name="s" placeholder="Search here">
 
-   
-      </div>
-   <hr>
-   
-    <div style="display:inline-block;">
-        <pre style="font-size:50px ;color: white;">Hello,
-I am KANHAIYA LAL
-I am a web developer             
-           </pre>
-           </div>
-           <div style="display:inline-block;">
-           <img src="me.jpg"alt="Me" height="250">
-           </div>
-           <br>
+ </div>
+  <div class="mid">
+<img class="img" src="Images/me.jpg" alt="Kanhaiya" height="300px">
+  <pre>Hello,
+  I am Kanhaiya Lal.
+  I am a Web developer.
+</pre>
+</div>
+<div class="foot">
+  <a href="https://www.facebook.com/kanhaiyalal.budania.5"><img class="i2" src="/Images/Facebook-logo.png"alt="Facebook_icon"height="50"></a>
 
-<a href="https://www.facebook.com/kanhaiyalal.budania.5"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"alt="Facebook_icon"height="50"></a>
+  <a href="https://www.instagram.com/kanhaiya1208_/"><img class="i2" src="/Images/Instagram_icon.png.webp" alt="Instagram_icon" height="50"></a>
+  
+  <a href="https://twitter.com/Kanhaiya1208_"><img class="i2" src="/Images/Twitter-logo.svg.png" alt="Twitter-logo" height="50"></a>
+  
+  <a href="https://www.linkedin.com/in/kanhaiya1208/"><img class="i2" src="/Images/174857.png" alt="LinkedIn" height="50"></a>
+  
+  <a href="https://github.com/kanhaiya1208"><img class="i2" src="/Images/GitHub-Mark.png" alt="GitHub-Mark" height="50"></a>
+  <br>
+  <button class="b3" onclick="document.location='/feedback.html'" >Give Feedback</button>
+    
 
-<a href="https://www.instagram.com/kanhaiya1208_/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram_icon" height="50"></a>
-
-<a href="https://twitter.com/Kanhaiya1208_"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="Twitter-logo" height="50"></a>
-
-<a href="https://www.linkedin.com/in/kanhaiya1208/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" height="50"></a>
-
-<a href="https://github.com/kanhaiya1208"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub-Mark" height="50"></a>
-
-  </body>
+  
+</div>
+</body>
 </html>
+
+ 
