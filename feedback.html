@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-  <form action="/feed.html" method="post" target="_blank">
+  <form onsubmit="sendEmail();reset;return false;">
    <div id="fe">
     <h1 style="text-align: center;">Feedback Form</h1>
     </div>
@@ -33,25 +33,26 @@
     <h3>Please give your Valuable feedback</h3> 
 
 <label for="f" style="font-size:20px ; margin-right: 50px;">Enter name:   </label>
-<input type="text" id="f" name="fname" required >
+<input type="text" id="name" name="fname" required >
 <br>
 <label for="email" style="font-size: 20px; margin-right: 7px;">Enter your email: </label>
-<input type="email" id="email" name="email">
+<input type="email" id="email" name="email" required>
 <br>
 <label for="c" style="font-size:20px ; margin-right : 50px;">Contact No:  </label>
-<input type="number" id="c" name="c" min="10" max="10" style="width:200px ;">
+<input type="number" id="contact" name="c"  style="width:200px ;">
 <br>
 <label for="d" style="font-size:20px ; margin-right: 105px;">Date:</label>
-  <input type="date" id="d" name="Date">
+  <input type="date" id="date" name="Date">
 <br>
 <p style="font-size:20px ;">How was the website:</p>
-<input type="radio" id="r1" name="f" value="Good">
+<div id="feed"><input type="radio" id="r1" name="f" value="Good">
   <label for="r1" style="font-size:20px ;">Good</label><br>
   <input type="radio" id="r2" name="f" value="Average">
   <label for="r2" style="font-size:20px ;">Average</label><br>
   <input type="radio" id="r3" name="f" value="Bad">
   <label for="r3" style="font-size:20px ;">Bad</label>
   <br>
+  </div>
   <span style="font-size:20px ;">Select your State:</span>
     <input list="state">
   <datalist id="state">
@@ -62,10 +63,30 @@
     <option value="Maharashtra"> 
   </datalist> <br> 
   <div style="font-size:20px ;">Write Your suggestion:</div>
-  <textarea name="message" rows="10" cols="30" placeholder="Write your suggestion"  style="margin-top: 20px;margin-left: 20px;">
+  <textarea id="other" name="message" rows="10" cols="30" placeholder="Write your suggestion"  style="margin-top: 20px;margin-left: 20px;">
     </textarea> 
-    <input type="submit" value="Submit" id="sub">
+    <input type="submit" value="Submit" id="sub" onclick="clicked()">
 </form>
-
+<script src="https://smtpjs.com/v3/smtp.js
+">
+</script>
+<script>
+  function sendEmail(){
+    Email.send({
+     SecureToken:"94ccf611-8d47-48ce-9acc-8d94a1084601",
+    To : 'kanhaiya12083@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "Name:"+document.getElementById("name").value +"<br> Email:"+document.getElementById("email").value+
+    "<br> Contact:"+document.getElementById("contact").value+
+    "<br> Date:"+document.getElementById("date").value+
+    "<br> Feedback:"+document.getElementById("feed").value+
+    "<br> State:"+document.getElementById("state").value+
+    "<br> Other:"+document.getElementById("other").value
+}).then(
+  message => alert("The message was submitted successfully")
+);
+  }
+</script>
 </body>
 </html>
