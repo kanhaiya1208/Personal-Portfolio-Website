@@ -7,53 +7,47 @@
     <title>Kanhaiya's Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-  
-  </style>
-  </head>
 <body>
- <div style="height: 8vw; background-color: white; font-size: 5vw; width: 100%;padding-bottom: 5vw;">
-<img src="/logo.jpg" alt="K" style="margin-right: 27vw; margin-top: 1vw;height: 7vw;" >
- <span style="">Kanhaiya Lal</span>
- <button style="height: 5vw;
- width: 10%;
- margin-left: 15vw; border-radius: 3vw;background-color: rgb(0, 255, 247);margin-bottom: 4vw;"
-onclick="document.location='/login.html'">Login</button>
- </div>
-  <div style="background-color:rgb(4 131 179) ; height:7vw">
-    <button onclick="document.location='index.html'" style="border-radius: 3vw;background-color: rgb(255, 145, 0);height:4vw; width:10%;margin-top: 1.5vw;">Home</button>
-    <button onclick="document.location='/About.html'" style="border-radius: 3vw; height:4vw; width:10%;background-color: rgb(255, 145, 0);margin-top: 1.5vw;">About</button>
-    <button onclick="document.location='/Skills.html'"style="border-radius: 3vw;background-color: rgb(255, 145, 0);height:4vw; width:10%;margin-top: 1.5vw;">Skills</button>
-    <button onclick="document.location='/Education.html'"style="border-radius: 3vw;background-color: rgb(255, 145, 0);height:4vw; width:15%;margin-top: 1.5vw;">Education</button>
-    <button onclick="document.location='/Contact.html'"style="border-radius: 3vw;background-color: rgb(255, 145, 0);height:4vw; width:15%;margin-top: 1.5vw;">Contact</button>
-   <label for="s"> </label>
-  <input type="search" id="s" placeholder="Search here" style="height: 3vw;margin-left: 15vw;width:15%">
-
- </div>
-  <div style="height: 28vw;font-size:3vw">
-<img class="img" src="/me.jpg" alt="Kanhaiya" style="height: 25vw;float: right;">
-  <pre>Hello,
-  I am Kanhaiya Lal.
-  I am a Web developer.
-</pre>
-</div>
-<div style="background-color:#333;height:15vw;padding-top: 3vw;">
-  <a href="https://www.facebook.com/kanhaiyalal.budania.5"><img src="/Facebook-logo.png"alt="Facebook_icon" style="height:4vw;margin-right: 1.5vw;"></a>
-
-  <a href="https://www.instagram.com/kanhaiya1208_/"><img src="/Instagram_icon.png.webp" alt="Instagram_icon" style="height:4vw;margin-right: 1.5vw"></a>
+  <header>
+    <h1>Kanhaiya</h1>
+</header>
+<nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Skills.html">Skills</a>
+    <a href="Education.html">Education</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+<main>
+  <section>
+    <div class="main">
+      <img src="me.jpg" alt="Kanhaiya" id="me">
+  <div class="intro">Hello, <br>
+       <div id="side">I am Kanhaiya. <br>
+       I am a student of Sardar Vallabhabhai National Institute of Technology,Surat. <br>
+       I am a Web developer.
+       </div>
+  </div>
+</div>  
+</section>
+</main>
+<footer>
+  <div class="foot">
+    <a href="https://www.facebook.com/kanhaiyalal.budania.5"><img src="fb.png" alt="Facebook_icon" class="handle"></a>
   
-  <a href="https://twitter.com/Kanhaiya1208_"><imgsrc="/Twitter-logo.png" alt="Twitter-logo"style="height:4vw;margin-right: 1.5vw" ></a>
-  
-  <a href="https://www.linkedin.com/in/kanhaiya1208/"><img src="/linkedin.png" alt="LinkedIn"style="height:4vw;margin-right: 1.5vw"></a>
-  
-  <a href="https://github.com/kanhaiya1208"><img  src="/GitHub-Mark.png" alt="GitHub-Mark"style="height:4vw" ></a>
-  <br>
-  <button onclick="document.location='/feedback.html'" style="font-size:4vw;margin-left: 35%;">Give Feedback</button>
+    <a href="https://www.instagram.com/kanhaiya1208_/"><img src="insta.png" alt="Instagram_icon" class="handle"></a>
     
-
+    <a href="https://twitter.com/Kanhaiya1208_"><img src="tweet.png" alt="Twitter-logo" class="handle"></a>
+    
+    <a href="https://www.linkedin.com/in/kanhaiya1208/"><img src="in.png" alt="LinkedIn"class="handle"></a>
+    
+    <a href="https://github.com/kanhaiya1208"><img  src="git.png" alt="GitHub-Mark"class="handle"></a>
+    </div>
+    <input type="button" value="Give Feedback" class="feed" onclick="document.location='feedback.html'">
   
-</div>
+    
+  
+  
+</footer>
 </body>
 </html>
-
- 
