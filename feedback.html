@@ -31,9 +31,8 @@
         }
           
       
-        #submit{
-          margin-left: 40%;
-          margin-right: 40%;
+        #submit,#reset{
+          margin-right: 10%;
           font-size: 5vw;
           border-radius: 1.5vw;
         }
@@ -49,8 +48,9 @@
         #l1,#l2,#l3,#l4{
           font-size: 3vw;
         }
-        .r{
+        .how{
           font-size: 3vw;
+        
         }
         .stat{
           font-size: 3vw;
@@ -63,6 +63,11 @@
         }
         #other{
           font-size: 1.5vw;
+        }
+        .b{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
         }
     </style>
 </head>
@@ -87,15 +92,12 @@
 <label for="Date" id="l4">Date:</label>
   <input type="date" id="Date" name="Date">
 <br>
-
-<h2> <b>How was the Website?</b></h2>
-<div id="feed"><input type="radio" id="r1"  value="Good">
-  <label for="r1" class="r" >Good</label><br>
-  <input type="radio" id="r2" value="Average">
-  <label for="r2" class="r">Average</label><br>
-  <input type="radio" id="r3" value="Bad">
-  <label for="r3" class="r">Bad</label>
-  <br>
+<div class="how">
+<legend>How was the Website?</legend>
+<p><input type="radio" name="feedback" id="good" >Good <br> <input type="radio" name="feedback" id="average">Average <br> <input type="radio" name="feedback" id="bad" > Not Good</p>
+    </fieldset>
+  </div>
+  
   <br>
   <br>
   </div>
@@ -113,7 +115,10 @@
   <div class="suggest">Write Your suggestion:</div> <br>
   <textarea id="other" name="Message" rows="10" cols="30" placeholder="Write your suggestion">
     </textarea> <br><br>
+    <div class="b">
     <input type="submit" value="Submit" id="submit" >
+    <input type="reset" name="reset" value="Reset" id="reset">
+    </div>
 </form>
 </body>
 </html>
