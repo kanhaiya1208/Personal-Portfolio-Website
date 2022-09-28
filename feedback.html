@@ -72,7 +72,7 @@
     </style>
 </head>
 <body>
-  <form action="mailto:kanhaiya12083@gmail.com" method="post" enctype="text/plain" >
+  <form method="post" name="form" >
    <div id="top">
     <h1>Feedback Form</h1>
     </div>
@@ -120,5 +120,18 @@
     <input type="reset" name="reset" value="Reset" id="reset">
     </div>
 </form>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwvlTXXMdK9UTSqlQa8Ts-2zan8kMndSg5kxcXnyM9gpFFl-TxHBBeEIVrmSD3UG1IzyA/exec'
+			const form = document.forms['form']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+</script>
+
 </body>
 </html>
