@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Kanhaiya Lal, portfolio, kanhaiya, web Developer, personal portfolio" />
+    <meta name="description" content="Welcome to Kanhaiya's Portfolio." />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8d9db6c5ce.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link id='favicon' rel="icon" href="./assets/images/icon.png" type="image/x-png">
+    <title>Education</title>
+</head>
+<style>
+.education {
+  background: #e5ecfb;
+  min-height: 80vh;
+}
+.education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.education .box-container .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  background: rgb(252, 252, 252);
+}
+.education .box-container .box:hover {
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+.education .box-container .box .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+.education .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.education .box-container .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+.education .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #012970;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+.education .box-container .box .content p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+.education h4 {
+  font-size: 2rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 600px) {
+  .education .box-container .box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .education .box-container .box .image {
+    width: 100%;
+    height: 25rem;
+  }
+  .education .box-container .box img {
+    width: 100%;
+  }
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+  
+}
+</style>
+<body>
+    <header>
+        <a href="index.html" class="logo"><i class="fab fa-kickstarter"></i> Kanhaiya</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a class="active" href="education.html">Education</a></li>
+            <li><a href="project.html">Project</a></li>
+            </ul>
+        </nav>
+</header>
+<br><br><br><br><br>
+
+<section class="education" id="education">
+
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+  
+  
+      <div class="box-container">
+  
+      <div class="box">
+          <div class="image">
+          <img src="./assets/images/svnit.jpeg" alt="">
+          </div>
+          <div class="content">
+          <h3>Bachelor of Engineering in Electronics and Communication Engineering</h3>
+          <p>Sardar Vallabhbhai National Institute of Technology | Surat</p>
+          <h4>2021-2025 | Pursuing</h4>
+          </div>
+      </div>
+  
+      <div class="box">
+        <div class="image">
+        <img  src="./assets/images/school.webp" alt="school">
+        </div>
+        <div class="content">
+        <p>Cambridge Convent School | CBSE</p>
+        <h4>2012-2020 | Completed</h4>
+        </div>
+      </div>
+  
+  </div>
+  </section>
+</body>
+</html>
