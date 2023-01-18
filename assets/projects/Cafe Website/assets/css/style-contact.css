@@ -122,17 +122,18 @@ body{
     }
 }
 .map iframe{
-    width: 1000px;
+    width: 100%;
     
 }
 .map{
     text-align: center;
+    width:100;
 }
 span:hover{
 opacity:0.8;
 }
 @media  (max-width: 550px){
 .map iframe{
-    width: 380px;
+    width: 100%;
 }
 }
