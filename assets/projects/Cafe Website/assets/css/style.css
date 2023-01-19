@@ -544,3 +544,13 @@ section
 }
 
 }
+@media(max-width:628px){
+	header .navbar{
+		display: flex;
+		flex-direction: column;
+	}
+	header .navbar a{
+		width: 100%;
+	}
+}
+
