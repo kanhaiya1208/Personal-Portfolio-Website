@@ -28,6 +28,26 @@
       "view": "https://code-editor1208.netlify.app/",
       "code": "https://github.com/kanhaiya1208/Online-IDE"
     }
+  },
+{
+    "name": "Video Chatting App",
+    "desc": "Chatting App",
+    "image": "Chatting App",
+    "category": "full stack",
+    "links": {
+      "view": "https://app-z634.onrender.com",
+      "code": "https://github.com/kanhaiya1208/Video-Chatting-App"
+    }
+  },
+  {
+    "name": "To do List App",
+    "desc": "Todo App",
+    "image": "Todo App",
+    "category": "full stack",
+    "links": {
+      "view": "https://to-do-list-app-n06a.onrender.com",
+      "code": "https://github.com/kanhaiya1208/To-do-List-App"
+    }
   }
 
 
