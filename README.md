@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kanhaiya1208" alt="kanhaiya1208" /></a> </p>
 
-- 👨‍💻 All of my projects are available at [https://kanhaiya1208.me/](https://kanhaiya1208.me/)
+- 👨‍💻 All of my projects are available at [https://kanhaiya1208.github.io/home/](https://kanhaiya1208.me/)
 
 - 📫 How to reach me **kanhaiya12083@gmail.com**
 
